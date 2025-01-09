@@ -152,6 +152,24 @@ input[type="email"] {
     text-align: center; 
 }
 
+/* Footer Styling */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #2f93b5; 
+    color: white;
+    padding: 10px 0;
+    position: relative; 
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
 /* Responsive Design - Mobile */
 @media (max-width: 768px) {
     header h1 {
