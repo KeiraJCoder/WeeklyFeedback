@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> 
+    <script defer src="main.js"></script>
+    <title>Weekly Feedback</title> 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Image for logo -->
+        <img src="logo.png" alt="Feedback Banner" class="header-img">
+        <!-- Main title of the form -->
+        <h1>Weekly Instructor Feedback</h1>
+        <!-- Brief description of the feedback form -->
+        <p>
+            Each week you have the opportunity to give feedback to your instructor.
+        </p>
+        <br>
+        <p>
+            This feedback will ask how you found the topic covered, whether there is anything you struggled with,<br> 
+            and if there is anything that can be done to better support you.
+        </p>
+    </header>
+
+    <main>
+        <!-- Main Form Section -->
+        <!-- Formspree Form -->
+        <!-- 
+        To set up your own Formspree link:
+        1. Sign up at https://formspree.io.
+        2. Navigate to "Forms" and click "+ Add New."
+        3. Select "New Form," give it a name, and enter your work email as the recipient.
+        4. Click "Create Form" to generate a unique link.
+        5. Replace the action URL in the form with your generated link and test it to ensure it works.
+        -->
+
+        <form action="https://formspree.io/f/xbllqrwr" method="POST">
+            <!-- Student Name Section -->
+            <section class="feedback-section">
+                <!-- Label for the student name input -->
+                <label for="student-name">
+                    <h2>Student Name:</h2>
+                </label>
+                <!-- Input field for the student's full name -->
+                <input 
+                    type="text" 
+                    id="student-name" 
+                    name="student-name" 
+                    placeholder="Enter your full name" 
+                    required 
+                    autocomplete="name">
+            </section>
+
+            <!-- Student Email Section -->
+            <section class="feedback-section">
+                <!-- Label for the student email input -->
+                <label for="student-email">
+                    <h2>Student Email Address:</h2>
+                </label>
+                <!-- Input field for the student's email address -->
+                <input 
+                    type="email" 
+                    id="student-email" 
+                    name="_replyto" 
+                    placeholder="Enter your email address" 
+                    required 
+                    autocomplete="email">
+            </section>
+
+            <!-- Separator Line -->
+            <div class="separator-line"></div> <!-- Visually separates sections -->
+
+            <!-- Feedback Questions Section -->
+            <!-- Confidence Question -->
+            <section class="feedback-section">
+                <label for="confidence">
+                    <h2>How did you find this week’s content, and which topics did you feel most confident about?</h2>
+                </label>
+                <textarea id="confidence" name="confidence" class="dynamic-textarea" placeholder="Write your answer here..." required autocomplete="off"></textarea>
+            </section>
+
+            <!-- Challenges Question -->
+            <section class="feedback-section">
+                <label for="challenges">
+                    <h2>Were there any concepts you found particularly challenging?</h2>
+                </label>
+                <textarea id="challenges" name="challenges" class="dynamic-textarea" placeholder="Write your answer here..." required autocomplete="off"></textarea>
+            </section>
+
+            <!-- Skills Improved Question -->
+            <section class="feedback-section">
+                <label for="skills">
+                    <h2>What skills or knowledge do you feel you’ve improved on the most this week?</h2>
+                </label>
+                <textarea id="skills" name="skills" class="dynamic-textarea" placeholder="Write your answer here..." required autocomplete="off"></textarea>
+            </section>
+
+            <!-- Support Resources Question -->
+            <section class="feedback-section">
+                <label for="support">
+                    <h2>What additional support or resources would help you further improve your understanding?</h2>
+                </label>
+                <textarea id="support" name="support" class="dynamic-textarea" placeholder="Write your answer here..." required autocomplete="off"></textarea>
+            </section>
+
+            <!-- Goals for Next Week -->
+            <section class="feedback-section">
+                <label for="goals">
+                    <h2>What are your goals for next week, and how do you plan to approach any areas where you need more practice?</h2>
+                </label>
+                <textarea id="goals" name="goals" class="dynamic-textarea" placeholder="Write your answer here..." required autocomplete="off"></textarea>
+            </section>
+
+            <!-- Separator Line -->
+            <div class="separator-line"></div>
+
+            <!-- 1-to-1 Session Checkbox -->
+            <section class="feedback-section">
+                <!-- Checkbox to indicate if a 1-to-1 session is desired -->
+                <label for="one-to-one">
+                    <h2>Are you struggling and need a one-to-one session with the instructor?</h2>
+                </label>
+                <input type="checkbox" id="one-to-one" name="one-to-one" value="Yes">
+                <label for="one-to-one">Yes, I would like a 1-to-1 session</label>
+            </section>
+            <br>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit Feedback</button> <!-- Button to submit the form -->
+        </form>
+    </main>
+
+
+</body>
+</html>
